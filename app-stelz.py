@@ -242,7 +242,7 @@ if uploaded_svg and uploaded_font_text:
     st.download_button(
         label="Download updated SVG",
         data=svg_text.encode("utf-8"),
-        file_name="custom_logo_and_curved_name.svg",
+        file_name="stelz_custom_wrap_" + name_text.lower() + "_" + flavor_input.lower() + ".svg",
         mime="image/svg+xml;charset=utf-8"
     )
 else:
