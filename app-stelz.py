@@ -14,8 +14,8 @@ user_text = st.text_input("Logo/Main text (replaces main path):", "Matcha")
 name_text = st.text_input("Name (curved):", "Katja")
 
 text_color = st.color_picker("Logo/main text color:", "#F5457F")
-main_color = st.color_picker("Main color (replaces #F3E500):", "#A8D48C")
-secondary_color = st.color_picker("Secondary color (replaces #D79C1E):", "#88A585")
+main_color = st.color_picker("Main color (replaces #A8D48C):", "#A8D48C")
+secondary_color = st.color_picker("Secondary color (replaces #88A585):", "#88A585")
 
 def split_user_text_to_lines(txt: str):
     """Limit to max 2 words. If >2, keep first two and warn."""
