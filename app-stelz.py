@@ -77,7 +77,7 @@ if st.button("Suggest colors from flavor"):
             }
 
             resp = client.chat.completions.create(
-                model="gpt-5",
+                model="gpt-4o-mini",
                 temperature=1,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
