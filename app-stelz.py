@@ -34,7 +34,7 @@ st.session_state.setdefault("secondary_color", "#88A585")
 # API key + flavor + AI button
 # -----------------------------
 openai_api_key = st.text_input("OpenAI API key", type="password", placeholder="sk-...")
-flavor_input = st.text_input("Flavor (also shown as main logo text)", value="Matcha")
+flavor_input = st.text_input("Flavor", value="Matcha")
 
 SYSTEM_PROMPT = """Jij bent een slimme assistent die altijd een JSON-object als input krijgt in deze vorm:
 
