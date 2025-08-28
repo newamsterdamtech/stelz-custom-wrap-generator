@@ -4,7 +4,6 @@ import base64
 import math
 import json
 import streamlit.components.v1 as components
-import openai
 
 st.title("STËLZ SVG Generator")
 
