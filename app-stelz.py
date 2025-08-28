@@ -239,10 +239,13 @@ if uploaded_svg and uploaded_font_text:
     st.markdown(f'<img src="data:image/svg+xml;base64,{svg_b64}" style="max-width:100%;">',
                 unsafe_allow_html=True)
 
+    flavor_slug = re.sub(r"\s+", "_", flavor_input.strip()).lower()
+    name_slug = re.sub(r"\s+", "_", name_text.strip()).lower()
+    
     st.download_button(
         label="Download updated SVG",
         data=svg_text.encode("utf-8"),
-        file_name="stelz_custom_wrap_" + name_text.lower() + "_" + flavor_input.lower() + ".svg",
+        file_name=f"stelz_custom_wrap_{name_slug}_{flavor_slug}.svg",
         mime="image/svg+xml;charset=utf-8"
     )
 else:
