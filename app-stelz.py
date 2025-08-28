@@ -132,7 +132,7 @@ name_text = st.text_input("Name (curved):", "Katja")
 # -----------------------------
 # Color pickers (now safe)
 # -----------------------------
-text_color = st.color_picker("Logo/main text color:", key="text_color")
+text_color = st.color_picker("Flavor/main text color:", key="text_color")
 main_color = st.color_picker("Main color (replaces #A8D48C):", key="main_color")
 secondary_color = st.color_picker("Secondary color (replaces #88A585):", key="secondary_color")
 
